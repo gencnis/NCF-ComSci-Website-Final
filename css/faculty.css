@@ -1,0 +1,101 @@
+/* Faculty page styling */
+
+* {
+    box-sizing: border-box;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+body {
+    background-color: #BFC8EF;
+}
+
+.fixed-bg { /* backrgound image styling */
+    background-image: url("../images/natsci.jpeg");
+    min-height: 1500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid #26478E;
+}
+
+.faculty { /* faculty container styling */
+    margin-left: 20%; 
+    margin-right: 20%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #EFF1FB;
+    padding: 3%;
+    border-style: double;
+    border-width: 10px;
+    border-color: #172C58;
+    box-shadow: 10px 10px 25px #354164;
+    ;
+}
+
+.prof { /* header for each professor styling */
+    color: #26478E;
+    border-bottom: solid; 
+    border-color: #172C58; 
+    padding-bottom: 2px;
+}
+
+h4 {
+    color: #26478E;
+}
+
+/* professor informations styling */
+.faculty > p {
+    color: black;
+}
+
+/* list for the informations styling */
+.list > dt {
+    display: list-item;
+    list-style-type: disc;
+    font-style: bold;
+    text-align: left;
+    color: black;
+    margin: 20px;
+}
+
+/* buttons for the display/no display info styling */
+button {
+    border-radius: 10px;
+    color: white;
+    background-color: #26478E;
+    font-size: medium;
+    font-style: bold;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: #354164;
+    color: #F0F1F2;
+}
+
+/* arrow in the buttons styling */
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .faculty, .prof, .fixed-bg{
+        width: 100%;
+    }
+}

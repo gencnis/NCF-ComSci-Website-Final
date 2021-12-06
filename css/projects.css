@@ -1,0 +1,53 @@
+/* Projects page styling */
+
+* {
+    box-sizing: border-box;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+body {
+    background-color: #BFC8EF;
+}
+
+/*Because I have separated the fields this is for the field title.*/
+.fieldTitle {
+    border-bottom: 4px solid #403F74;
+    color: #403F74;
+    padding-left: 20px;
+    padding-bottom: 0;
+}
+
+/* Parent class for keeping the projects together. */
+.field{
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #F0F1F2;
+}
+
+/* Child div, in the left side is a trailer for a project. */
+.left{
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+/* Child div, in the right side is a trailer for a project. */
+.right{
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+/* The media container */
+.projectMedia{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 620px) {
+    .field, .left, .right {
+        width: 100%;
+    }
+}

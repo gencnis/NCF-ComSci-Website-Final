@@ -1,0 +1,45 @@
+/* Courses page styling */
+
+* {
+    box-sizing: border-box;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+body {
+    background-color: #BFC8EF;
+}
+
+/* Table info styling */
+.columnInfo {
+    float: left;
+    width: 33.33%;
+    padding: 1px;
+}
+
+/* Table info styling */
+.rowInfo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table { border-collapse:collapse; } /* Table styling */
+table thead th { border-bottom: 1px solid black; }
+
+/* Course name styling */
+.courseName {
+    border-right: 2px solid black;
+    padding-left: 10px;
+}
+
+/* Creates the borders */
+td{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+/* places the X's */
+p {
+    padding-left: 20%;
+    padding-right: 20%;
+}

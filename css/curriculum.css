@@ -1,0 +1,73 @@
+/* Curriculum page styling */
+
+* {
+    box-sizing: border-box;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+body {
+    background-color: #BFC8EF;
+}
+
+.fixed-bg { /* background image styling */
+    background-image: url("../images/natsci3.jpeg");
+    min-height: 1500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid #26478E;
+}
+
+/* each bubble chart image styling */
+.bubbleImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border: 10px solid #403F74;
+    border-radius: 10px;
+}
+
+/* field header styling */
+#fieldTitle {
+    border: 1px solid #354164;
+    border-radius: 25px;
+    color: #F0F1F2;
+    font-size: x-large;
+    text-align: center;
+    background-color: #354164;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* buttons row */
+.rowButton{
+    padding-top: 15px;
+}
+
+/* each button styling */
+.view {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 5px 5px 2px #172C58;
+    background-color: #26478E;
+    color: white;
+    text-decoration: none;
+}
+
+.view:hover{
+    background-color: #354164;
+    color: white;
+}

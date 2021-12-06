@@ -1,0 +1,71 @@
+/* Request Info Page styling */
+
+* {
+    box-sizing: border-box;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+body {
+    background-color: #BFC8EF;
+}
+
+.fixed-bg { /* backrgound image styling */
+    background-image: url("../images/heiser.jpeg");
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid #26478E;
+}
+
+/* Style of the error */
+.reqError {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Request Info form container */
+.reqInfo {
+    color: #26478E;
+    margin-left: 20%; 
+    margin-right: 20%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #EFF1FB;
+    padding: 3%;
+    border-style: double;
+    border-width: 10px;
+    border-color: #172C58;
+    box-shadow: 10px 10px 25px #354164;
+}
+
+/* Each field in the form */
+.field{
+    height: 30px;
+    width: 200px;
+    box-shadow: 3px 3px 10px #654F7A;
+}
+
+/* Submit button */
+#submit {
+    height: 50px; 
+    width: 150px; 
+    font-weight: bold; 
+    font-size: large;
+    background-color: #172C58;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #654F7A;
+}
+
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .reqError, .reqInfo, .field{
+        width: 100%;
+    }
+}

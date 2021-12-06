@@ -1,0 +1,91 @@
+/* Navigation bar/footer styling */
+
+.nav {
+    background-color: #F0F1F2;
+    width: 100%;
+    height: 50px;
+    min-width: fit-content;
+}
+
+/* Navigation bar the title and the logo on the left side area */
+.nav-title {
+    overflow: hidden;
+} .nav > .nav-title > .logo {
+    display: inline-block;
+    text-align: center;
+    top: 13px; 
+    width: 195px;
+    height: 40px;
+    position: absolute;
+    border-right-style: solid;
+    border-right-color: #26478E;
+} .my-title {
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #26478E;
+    left: 195px;
+    width: 260px;
+    text-align: center;
+    position: absolute;
+    top: 4px;
+}
+
+.my-title > h1 {
+    font-size: 24px;
+}
+
+/* Navigation bar options on the right side area */
+.options {
+    min-width: 1000px;
+    width: fit-content;
+    height: inherit;
+    position: absolute;
+    right: 15px;
+    display: inline;
+    /* width: 66.6vw; */
+    width: 50vw;
+    text-align: center;
+
+    top: 5px;
+    right: 50px;
+
+} .options > ul, li {
+    float: right;
+    list-style: none;
+    display: inherit;
+    list-style-type: none;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 60px;
+}
+
+/* Create two equal columns for footer, that floats next to each other */
+.column {
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 150px;
+    padding: 10px;
+    color: white;
+    background-color: #26478E;
+    font-size: small;
+    text-decoration: none;
+}
+.column a{
+    color: white;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .nav, .options, .column {
+      width: 100%;
+    }
+}
