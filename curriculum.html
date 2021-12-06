@@ -1,0 +1,120 @@
+<!-- This page is to display Computer Science AOC
+    @author: Nisanur Genc
+    Front-End Web Design-Development Class, NCF, December, 2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/navBarFooter.css">
+    <link rel="stylesheet" href="css/curriculum.css">
+    <link rel="icon" href="images/titlelogo.png" type="image/icon type">
+
+    <!-- JS -->
+    <script src="js/navigationBar.js"></script>
+    <script src="js/highlightNavBar.js"></script>
+    <title>Curriculum | New College of Florida</title>
+</head>
+
+<body>
+
+    <!-- NAV STARTS HERE -->
+    <div class="nav">
+        <div class="nav">
+            <div class="nav-title" id="title">
+                <div class="logo" id="logo">
+                    <a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                    style="text-decoration: none; color: #26478E;">
+                        <img src="images/ncflogoPNG.png" alt="New College Logo" width="160px" height="40px"/>
+                    </a>
+                </div>
+                <div class="my-title" id="myTitle">
+                    <h1>Computer Science</h1>
+                </div>
+                <div class="options" id="options">
+                    <ul style="font-size: large;">
+                        <li><a href="requestinfo.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Request Info</a></li> 
+                        <li><a href="curriculum.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Curriculum</a></li>
+                        <li><a href="faculty.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Faculty</a></li>
+                        <li><a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAV ENDS HERE -->
+
+<div class="fixed-bg"> <!-- background image div -->
+    <div> <!-- is for the header -->
+        <h2 style="text-align: center; 
+            color: #F0F1F2; 
+            border: 5px solid #654F7A;
+            border-radius: 15px;
+            padding:5px; 
+            background-color: #654F7A;">
+            Computer Science Curriculum
+        </h2>
+    </div>
+    
+    <!-- Bubble chart first image represents the courses that you should take in order to have CS degree -->
+    <img class="bubbleImage" src="images/curriculum/1.jpg" alt="Bubble Chart1"  width="1000" height="auto">
+    <br/><br/>
+
+    <!-- divider to specify what the fields are -->
+    <div id="fieldTitle">
+        <h3 style="margin: 5px;">Fields</h3>
+    </div> <br/>
+
+    <!-- Bubble chart first image represents the fields that classes belong to -->
+    <img class="bubbleImage" src="images/curriculum/2.jpg" alt="Bubble Chart2">
+    <br/><br/>
+
+    <div class="rowButton"> <!-- three button at the end of the page -->
+        
+        <!-- learning compact button -->
+        <a href="files/LearningCompact.pdf" target="blank_" class="view">VIEW COMPUTER SCIENCE ACADEMIC LEARNING COMPACT</a><br/>
+
+        <!-- this button takes you to courses offered -->
+        <a href="courses5years.html" class="view">VIEW COMPUTER SCIENCE COURSES OFFERED IN LAST 5 YEARS</a><br/>
+        
+        <!-- this button gives you the curriculum as pdf file -->
+        <a href="files/BubbleAOC.pdf" target="blank_" class="view">VIEW COMPUTER SCIENCE AOC BUBBLE CHART AS PDF</a><br/>
+
+        <br/>
+    </div>
+</div>
+
+<!-- FOOTER STARTS HERE -->
+<div class="footer">
+    <div class="row">
+        <div class="column">
+          <h2>Contact</h2>
+          <p>New College of Florida<br/>
+            500 College Dr<br/>
+            Sarasota, FL 34243<br/>
+            (941) 487-5000
+            </p>
+        </div>
+        <div class="column">
+            <h2>Connect</h2>
+            <a href="https://www.linkedin.com/school/newcollegeofflorida/mycompany/" target="_blank">LinkedIn</a><br/>
+            <a href="https://www.instagram.com/newcollegeoffl/" target="_blank">Instagram</a><br/>
+            <a href="https://twitter.com/NewCollegeofFL" target="_blank">Twitter</a><br/>
+            <a href="https://www.youtube.com/user/NewCollegeofFL" target="_blank">YouTube</a>
+        </div>
+    </div>
+</div>
+<!-- FOOTER ENDS HERE -->
+
+</body>
+</html>

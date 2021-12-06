@@ -1,0 +1,713 @@
+<!-- This page is for Courses Offered in the past 5 years
+    @author: Nisanur Genc
+    Front-End Web Design-Development Class, NCF, December, 2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/navBarFooter.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="icon" href="images/titlelogo.png" type="image/icon type">
+
+        <!-- JS -->
+    <script src="js/navigationBar.js"></script>
+    <script src="js/highlightNavBar.js"></script>
+    <title>Courses Offered | New College of Florida</title>
+</head>
+
+<body>
+
+    <!-- NAV STARTS HERE -->
+    <div class="nav">
+        <div class="nav">
+            <div class="nav-title" id="title">
+                <div class="logo" id="logo">
+                    <a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                        style="text-decoration: none; color: #26478E;">
+                        <img src="images/ncflogoPNG.png" alt="New College Logo" width="160px" height="40px"/>
+                    </a>
+                </div>
+                <div class="my-title" id="myTitle">
+                    <h1>Computer Science</h1>
+                </div>
+                <div class="options" id="options">
+                    <ul style="font-size: large;">
+                        <li><a href="requestinfo.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Request Info</a></li> 
+                        <li><a href="curriculum.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Curriculum</a></li>
+                        <li><a href="faculty.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Faculty</a></li>
+                        <li><a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAV ENDS HERE -->
+
+<div style="overflow:auto">
+    <div> <!-- is for the header -->
+        <h2 style="text-align: center; 
+            color: #F0F1F2; 
+            border: 5px solid #654F7A;
+            border-radius: 15px;
+            padding:5px; 
+            background-color: #654F7A;">
+            Computer Science Course Offered <br/>
+            Academic Years 2015-2016 to 2020-2021
+        </h2>
+    </div>
+
+    <!-- is for the whole table -->
+    <div style="text-align: center; 
+            color: black;
+            padding: 10px; 
+            background-color: white;">
+        <div class="rowInfo"> <!-- information for the table -->
+            <div class="columnInfo" style="display: inline;"> <!-- each column for the info has one field -->
+                <img class="field" src="images/curriculum/pink.png" alt="Table Color Info" width="30" height="30">
+                <p style="margin-top: 1px;">Applications</p>
+            </div>
+
+            <div class="columnInfo"> <!-- each column for the info has one field -->
+                <img class="field" src="images/curriculum/purple.png" alt="Table Color Info" width="30" height="30">
+                <p style="margin-top: 1px;">Artificial Intelligence</p>
+            </div>
+
+            <div class="columnInfo"> <!-- each column for the info has one field -->
+                <img class="field" src="images/curriculum/blue.png" alt="Table Color Info" width="30" height="30">
+                <p style="margin-top: 1px;">Programming Language</p>
+            </div>
+
+            <div class="columnInfo"> <!-- each column for the info has one field -->
+                <img class="field" src="images/curriculum/green.png" alt="Table Color Info" width="30" height="30">
+                <p style="margin-top: 1px;">Computer Systems</p>
+            </div>
+            
+            <div class="columnInfo"> <!-- each column for the info has one field -->
+                <img class="field" src="images/curriculum/orange.png" alt="Table Color Info" width="30" height="30">
+                <p style="margin-top: 1px;">Mathematics</p> 
+            </div>
+
+            <div class="columnInfo"> <!-- each column for the info has one field -->
+                <img class="field" src="images/curriculum/yellow.png" alt="Table Color Info" width="30" height="30">
+                <p style="margin-top: 1px;">Theoretical Computer Science</p>
+            </div>
+        </div>
+    </div>
+
+    <table id="coursesTable" style="width:100%; background-color: white;"> <!-- the general table -->
+        <tr>
+            <!-- Course title, year and terms information displayed in a row here -->
+            <th id="CourseTitle">Course Title</th>
+            <th id="year1" style="border-left:2px solid black;">
+                <table>
+                <tr> <th colspan="2">2015-2016</th> </tr>
+                <tr> <th> Fall 2015 </th> <th> Spring 2016 </th> </tr>
+                </table>
+            </th>
+            <th id="year2" style="border-left:2px solid black;">
+                <table>
+                    <tr> <th colspan="2">2016-2017</th> </tr>
+                    <tr> <th> Fall 2016 </th> <th> Spring 2017 </th> </tr>
+                </table>
+            </th>
+            <th id="year3" style="border-left:2px solid black;">
+                <table>
+                    <tr> <th colspan="2">2017-2018</th> </tr>
+                    <tr> <th> Fall 2017 </th> <th> Spring 2018 </th> </tr>
+                </table>
+            </th>
+            <th id="year4" style="border-left:2px solid black;">
+                <table>
+                    <tr> <th colspan="2">2018-2019</th> </tr>
+                    <tr> <th> Fall 2018 </th> <th> Spring 2019 </th> </tr>
+                </table>
+            </th>
+            <th id="year5" style="border-left:2px solid black;">
+                <table>
+                    <tr> <th colspan="2">2019-2020</th> </tr>
+                    <tr> <th> Fall 2019 </th> <th> Spring 2020 </th> </tr>
+                </table>
+            </th>
+            <th id="year6" style="border-left:2px solid black;">
+                <table>
+                    <tr> <th colspan="2">2020-2021</th> </tr>
+                    <tr> <th> Fall 2020 </th> <th> Spring 2021 </th> </tr>
+                </table>
+            </th>
+        </tr>
+
+        <!-- from here we see all the classes in a column and the info about them
+            table borders, displaying when the classes were offered,
+            the fields for the classes are shown with background images,
+            X represents when it was offered -->
+
+        <tr style="background-color: #FFECB3">
+            <td class="courseName">Algorithms</td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td style="border-right: none"><p style="text-align: right;">X</p></td>
+        </tr>
+
+        <tr style="background-color: #D8ADC4;">
+            <td class="courseName">Artificial Intelligence</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D8ADC4;">
+            <td class="courseName">Artificial Intelligence and Data Mining</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D8ADC4;">
+            <td class="courseName">Artificial Intelligence Through Machine Game Playing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"><p style="text-align: right;">X</p></td>
+        </tr>
+
+        <tr style="background-color: #C9E2BE">
+            <td class="courseName">Computer Architecture and Digital Hardware</td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #C9E2BE">
+            <td class="courseName">Computer Networks</td>
+            <td><p style="text-align: left;">X</p></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #FFECB3">
+            <td class="courseName">Cryptography and Data Privacy</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"><p style="text-align: left;">X</p></td>
+        </tr>
+
+        <tr style="background-color: #FFECB3">
+            <td class="courseName">Cryptography and Network Security</td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D8ADC4;">
+            <td class="courseName">Data Mining and Machine Learning</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Data Structures</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td style="border-right: none"><p style="text-align: left;">X</p></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Data Visualization and Communication</td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Data-Intensive Computing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Database</td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Database Systems</td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Database Systems with Linux</td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Databases and Web Applications</td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Databases for Data Science</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #FBD7B4">
+            <td class="courseName">Dealing with Data II</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #FFECB3">
+            <td class="courseName">Discrete Mathematics for Computer Science</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #C9E2BE">
+            <td class="courseName">Distributed Computing</td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Foundations of Human Centered Computing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td style="border-right: none"><p style="text-align: left;">X</p></td>
+        </tr>
+
+        <tr style="background-color: #D0E1F3;">
+            <td class="courseName">Functional Problem Solving</td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D0E1F3;">
+            <td class="courseName">Functional Problem Solving with Scheme</td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D0E1F3;">
+            <td class="courseName">Functional Programming</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"><p style="text-align: right;">X</p></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">High Performance Computing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Human-Computer Interaction</td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D0E1F3;">
+            <td class="courseName">Intermediate Python</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td style="border-right: none"><p style="text-align: left;">X</p></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Internet of Things</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #FFECB3">
+            <td class="courseName">Introduction to Algorithms</td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D8ADC4;">
+            <td class="courseName">Introduction to Artificial Intelligence</td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Introduction to Augmented Reality</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D0E1F3;">
+            <td class="courseName">Introduction to C++</td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #C9E2BE">
+            <td class="courseName">Introduction to Computer Systems, Architecture and Hardware</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"><p style="text-align: right;">X</p></td>
+        </tr>
+
+        <tr style="background-color: #C9E2BE">
+            <td class="courseName">Introduction to Computer Systems, Architecture, and Hardware</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D8ADC4;">
+            <td class="courseName">Introduction to Data Mining</td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Introduction to Engineering</td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D0E1F3;">
+            <td class="courseName">Introduction to Programming in C</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D0E1F3;">
+            <td class="courseName">Introduction to Programming in JAVA</td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D0E1F3;">
+            <td class="courseName">Introduction to Programming in Python</td>
+            <td><p style="text-align: left;">X</p></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td style="border-right: none"><p style="text-align: left;">X</p></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Introduction to Virtual Reality Systems</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"><p style="text-align: right;">X</p></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Legal and Ethics Issues in Technology</td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D8ADC4;">
+            <td class="courseName"> Machine Learning for Visual Thinkers</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"><p style="text-align: left;">X</p></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Mobile Application Development</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td style="border-right: none"><p style="text-align: right;">X</p></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Natural Language Processing</td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"><p style="text-align: left;">X</p></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Object Oriented Design</td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td style="border-right: none"><p style="text-align: left;">X</p></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Object-Oriented Programming</td>
+            <td><p style="text-align: right;">X</p></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td style="border-right: none"><p style="text-align: right;">X</p></td>
+        </tr>
+
+        <tr style="background-color: #C9E2BE">
+            <td class="courseName">Operating Systems</td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Social and Ethical Issues in Computer Science</td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"><p style="text-align: left;">X</p></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Software Engineering</td>
+            <td><p style="text-align: right;">X</p></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td style="border-right: none"><p style="text-align: right;">X</p></td>
+        </tr>
+
+        <tr style="background-color: #FFECB3">
+            <td class="courseName">Topics in Algorithms</td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #D8ADC4;">
+            <td class="courseName">Topics in Data Mining: Computer Vision and Data Mining</td>
+            <td><p style="text-align: right;">X</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr>
+            <td class="courseName">Usable Privacy and Security</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+        <tr style="background-color: #F3C6C6;">
+            <td class="courseName">Web Services</td>
+            <td></td>
+            <td></td>
+            <td><p style="text-align: left;">X</p></td>
+            <td></td>
+            <td></td>
+            <td style="border-right: none"></td>
+        </tr>
+
+    </table>
+
+    <br/><br/>
+</div>
+
+<!-- FOOTER STARTS HERE -->
+<div class="footer">
+    <div class="row">
+        <div class="column">
+          <h2>Contact</h2>
+          <p>New College of Florida<br/>
+            500 College Dr<br/>
+            Sarasota, FL 34243<br/>
+            (941) 487-5000
+            </p>
+        </div>
+        <div class="column">
+            <h2>Connect</h2>
+            <a href="https://www.linkedin.com/school/newcollegeofflorida/mycompany/" target="_blank">LinkedIn</a><br/>
+            <a href="https://www.instagram.com/newcollegeoffl/" target="_blank">Instagram</a><br/>
+            <a href="https://twitter.com/NewCollegeofFL" target="_blank">Twitter</a><br/>
+            <a href="https://www.youtube.com/user/NewCollegeofFL" target="_blank">YouTube</a>
+        </div>
+    </div>
+</div>
+<!-- FOOTER ENDS HERE -->
+
+</body>
+</html>

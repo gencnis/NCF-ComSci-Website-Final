@@ -1,0 +1,143 @@
+<!-- This page is to display student projects as trailers
+    @author: Nisanur Genc
+    Front-End Web Design-Development Class, NCF, December, 2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/navBarFooter.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="icon" href="images/titlelogo.png" type="image/icon type">
+
+        <!-- JS -->
+    <script src="js/navigationBar.js"></script>
+    <script src="js/highlightNavBar.js"></script>
+    <title>Projects | New College of Florida</title>
+</head>
+
+<body>
+
+    <!-- NAV STARTS HERE -->
+    <div class="nav">
+        <div class="nav">
+            <div class="nav-title" id="title">
+                <div class="logo" id="logo">
+                    <a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                        style="text-decoration: none; color: #26478E;">
+                        <img src="images/ncflogoPNG.png" alt="New College Logo" width="160px" height="40px"/>
+                    </a>
+                </div>
+                <div class="my-title" id="myTitle">
+                    <h1>Computer Science</h1>
+                </div>
+                <div class="options" id="options">
+                    <ul style="font-size: large;">
+                        <li><a href="requestinfo.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Request Info</a></li> 
+                        <li><a href="curriculum.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Curriculum</a></li>
+                        <li><a href="faculty.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Faculty</a></li>
+                        <li><a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAV ENDS HERE -->
+
+    <div style="overflow: auto;">
+        <div> <!-- header for the page -->
+            <h2 style="text-align: center; 
+                color: #F0F1F2; 
+                border: 5px solid #654F7A;
+                border-radius: 15px;
+                padding:5px; 
+                background-color: #654F7A;">
+                Student Projects
+            </h2>
+        </div>
+        <br/>
+        <div class="fieldTitle"> <!-- small header for the field -->
+            <h3>Virtual Reality</h3>
+        </div>
+
+        <div class="field"> <!-- row for the media -->
+            <div class="left"> <!-- this column holds one piece of media -->
+                <iframe src="https://drive.google.com/file/d/1HZA8HC9TsyE-cBKYQPnrFWwsQSFbVb3w/preview" 
+                width="100%" height="400px" allow="autoplay" title="Dimensional Doors"></iframe>
+            </div>
+
+            <div class="right"> <!-- this column holds one piece of media -->
+                <iframe src="https://drive.google.com/file/d/1zbkKF1Zfo7UuUP0Nhhu8kwXaniogFlE2/preview" 
+                width="100%" height="400px" allow="autoplay" title="JellyBean"></iframe>
+            </div>
+        </div>
+
+        <div class="fieldTitle"> <!-- small header for the field -->
+            <h3>Game Design</h3>
+        </div>
+
+        <div class="field"> <!-- row for the media -->
+            <div class="left"> <!-- this column holds one piece of media -->
+                <iframe src="https://drive.google.com/file/d/1K5KQGhETURPg4Vf_PO9md1DnA6XzkheD/preview" 
+                width="100%" height="400px" allow="autoplay" title="Pong Game"></iframe>
+
+            </div>
+            
+            <div class="right"> <!-- this column holds one piece of media -->
+                <iframe src="https://drive.google.com/file/d/1WkAhPz1vUXGLmLw4FaHxrwEQ-EPlMVXY/preview" 
+                width="100%" height="400px" allow="autoplay" title="Manatee Game"></iframe>
+            </div>
+        </div>
+
+        <div class="fieldTitle"> <!-- small header for the field -->
+            <h3>Mobile Application</h3>
+        </div>
+
+        <div class="field"> <!-- row for the media -->
+            <div class="left"> <!-- this column holds one piece of media -->
+                <iframe src="https://drive.google.com/file/d/1Caoz0s7L7uPPlf-m4CySTo_4zf1BbpGe/preview" 
+                width="100%" height="400px" allow="autoplay" title="Quiz App"></iframe>
+
+            </div>
+            
+            <div class="right"> <!-- this column holds one piece of media -->
+                <iframe src="https://drive.google.com/file/d/1mhGYf5vd5OFr3JvwZ96rTFjgurm1tOEs/preview" 
+                width="100%" height="400px" allow="autoplay" title="Password App"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER STARTS HERE -->
+    <div class="footer">
+        <div class="row">
+            <div class="column">
+            <h2>Contact</h2>
+            <p>New College of Florida<br/>
+                500 College Dr<br/>
+                Sarasota, FL 34243<br/>
+                (941) 487-5000
+                </p>
+            </div>
+            <div class="column">
+                <h2>Connect</h2>
+                <a href="https://www.linkedin.com/school/newcollegeofflorida/mycompany/" target="_blank">LinkedIn</a><br/>
+                <a href="https://www.instagram.com/newcollegeoffl/" target="_blank">Instagram</a><br/>
+                <a href="https://twitter.com/NewCollegeofFL" target="_blank">Twitter</a><br/>
+                <a href="https://www.youtube.com/user/NewCollegeofFL" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER ENDS HERE -->
+
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!-- This page is to display faculty members of the department
+    @author: Nisanur Genc
+    Front-End Web Design-Development Class, NCF, December, 2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/navBarFooter.css">
+    <link rel="stylesheet" href="css/faculty.css">
+    <link rel="icon" href="images/titlelogo.png" type="image/icon type">
+
+        <!-- JS -->
+    <script src="js/navigationBar.js"></script>
+    <script src="js/highlightNavBar.js"></script>
+    <script src="js/textHideButton.js"></script>
+    <title>Faculty | New College of Florida</title>
+</head>
+
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+    <!-- NAV STARTS HERE -->
+    <div class="nav">
+        <div class="nav">
+            <div class="nav-title" id="title">
+                <div class="logo" id="logo">
+                    <a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                        style="text-decoration: none; color: #26478E;">
+                        <img src="images/ncflogoPNG.png" alt="New College Logo" width="160px" height="40px"/>
+                    </a>
+                </div>
+                <div class="my-title" id="myTitle">
+                    <h1>Computer Science</h1>
+                </div>
+                <div class="options" id="options">
+                    <ul style="font-size: large;">
+                        <li><a href="requestinfo.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Request Info</a></li> 
+                        <li><a href="curriculum.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Curriculum</a></li>
+                        <li><a href="faculty.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Faculty</a></li>
+                        <li><a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAV ENDS HERE -->
+
+    <div style="overflow:auto">
+        <div class="fixed-bg"> <!-- is for the background image -->
+                <!-- header for the page -->
+                <h2 style="text-align: center; 
+                    color: #F0F1F2; 
+                    border: 5px solid #654F7A;
+                    border-radius: 15px;
+                    padding:5px; 
+                    background-color: #654F7A;">
+                    Faculty
+                </h2>
+
+                <!-- faculty container, names are displayed in an alphabetic order -->
+                <div class="faculty">
+
+                    <!-- Professor Eaton's information starts here-->
+                    <h1 class="prof">Caitrin Eaton</h1>
+                    <h4>Assistant Professor of Computer Science - Computer Science - Natural Sciences</h4>
+                    <img src="images/faculty/eaton.jpeg" alt="Professor Eaton">
+                    <p>
+                        Phone: (941) 487-4522<br/>
+                        Email: ceaton@ncf.edu<br/>
+                        Office Location: HNS 207<br/>
+                        Mail Location: HNS E172C<br/><br/>
+                        Postdoc, Physiology, University of California, Irvine<br/>
+                        Ph.D., Computer Science, University of South Florida<br/>
+                        B.S., Computer Engineering, Tufts University<br/>
+                    </p>
+
+                    <!-- display/ no display interest button -->
+                    <button onclick="eatonInterest()">Interests<i class="arrow down"></i></button><br/>
+
+                    <div id="eatonInterest" style="display: none;">
+                        <p style="color: black;">
+                            Biologically Informed Robotics, Computational Physiology, Embedded Systems <br/><br/>
+
+                            Professor Eaton became fascinated by the role of morphology in control while developing her 
+                            graduate dissertation on biologically informed robotic control algorithms. During a postdoctoral 
+                            research fellowship in muscle physiology at the University of California, Irvine, she came to 
+                            appreciate that robots can be used to support the study of animal life, just as animal physiology 
+                            can support the design of more capable robotic systems. Professor Eaton loves collaborating with 
+                            biologists to design robots and physics-based simulations as testbeds for physiological hypotheses, 
+                            and uses principles of animal physiology to design more agile, energy efficient robots. When computer 
+                            scientists and biologists collaborate, everybody wins!
+                        </p>
+                    </div>
+
+                    <!-- display/ no display courses button -->
+                    <button onclick="eatonCourses()">Courses<i class="arrow down"></i></button><br/>
+
+                    <div id="eatonCourses" style="display: none;">
+                        <dl class="list">
+                            <dt>Machine Learning for Visual Thinkers</dt>
+                            <dt>Robot Modeling & Control</dt>
+                            <dt>Embedded Systems</dt>
+                            <dt>Intermediate Python: Simulation & Game Design</dt>
+                            <dt>Computer Architecture</dt>
+                        </dl>
+                    </div>
+
+                    <!-- display/ no display publications button -->
+                    <button onclick="eatonPublications()">Selected Publications<i class="arrow down"></i></button><br/>
+
+                    <div id="eatonPublications" style="display: none;">
+                        <p style="color: black;"><em>(** Undergraduate Coauthors)</em></p>
+                        <dl class="list">
+                            <dt>Exploring structural control of stiffness in synthetic tendon. 
+                                CE Eaton, T Ramdhoni**, and RS Karp**. CLAWAR 2019: 22nd International 
+                                Conference on Climbing and Walking Robots and the Support Technologies 
+                                for Mobile Machines (CLAWAR). August, 2019.</dt>
+                            <dt>Compliant substrates disrupt elastic energy storage in jumping tree frogs. 
+                                CM Reynaga, CE Eaton, GA Strong**, E Azizi. Integrative and Comparative 
+                                Biology 59 (6), 1535-1545. December, 2019.</dt>
+                            <dt>Resistance to radial expansion limits muscle strain and work. E Azizi, 
+                                AR Deslauriers, NC Holt, CE Eaton. Biomechanics and modeling in mechanobiology 
+                                16 (5), 1633-1643. April, 2017.</dt>
+                            <dt>Periodic spring–mass running over uneven terrain through feedforward control of 
+                                landing conditions. LR Palmer III, CE Eaton. Bioinspiration & biomimetics 9 (3), 
+                                036018. August, 2014.</dt>
+                        </dl>
+                    </div>
+                    <!-- Professor Eaton's information ends here-->
+
+                    <!-- Professor Gillman's information starts here-->
+                    <h1 class="prof">David Gillman</h1>
+                    <h4>Associate Professor of Computer Science - Computer Science - Data Science Program - Graduate Studies 
+                        - Natural Sciences</h4>
+                    <img src="images/faculty/gillman.jpeg" alt="Professor Gillman">
+
+                    <p>
+                        Phone: (941) 487-4118<br/>
+                        Email: dgillman@ncf.edu<br/>
+                        Office Location: HNS 154<br/>
+                        Mail Location: Heiser E172C<br/><br/>
+                        Ph.D. in Mathematics, MITB.A., Yale
+                    </p>
+
+                    <!-- display/ no display webpage info button -->
+                    <button onclick="gillmanPage()">Web Page<i class="arrow down"></i></button><br/>
+
+                    <div id="gillmanPage" style="display: none;">
+                        <p style="color: black;">
+                            <a href=http://dgillman.ncf.edu target="blank_">http://dgillman.ncf.edu/</a><br/><br/>
+
+                            Senior Architect at Akamai. Interests: Image Processing, Health Informatics.<br/><br/>
+                            
+                            David Gillman joined the New College faculty in the fall of 2013. He returns to teaching 
+                            after having worked at Iterated Systems, Inc., and Akamai Technologies, Inc. He teaches 
+                            programming, software engineering, and advanced courses on computational tools, topics, 
+                            and theory. His research interests are the Internet, image processing, and the use of computers 
+                            for health care and the civic good.
+                        </p>
+                    </div>
+
+                    <!-- display/ no display publications button -->
+                    <button onclick="gillmanPublications()">Selected Publications<i class="arrow down"></i></button><br/>
+                    <div id="gillmanPublications" style="display: none;">
+                        <dl class="list">
+                            <dt>with M. Sipitca, “Conditional entropy coding of DCT coefficients for video compression,” 
+                                Proceedings of the SPIE Symposium on Image and Video Communications and Processing, January, 2000.</dt>
+                            <dt>with M. Sipitca, L. Hurd, “Reconstruction of bilevel images from a low quality JPEG,” Proceedings 
+                                of the SPIE Symposium on Image and Video Communications and Processing, January, 2000.</dt>
+                            <dt>“A Chernoff bound for random walks on expander graphs,” SIAM Journal of Computing, volume 27, number 4, 1998.</dt>
+                            <dt>with H. Kaper, M. K. Kwong, “L2-norm inequalities for the differentiation operator on compact intervals,” 
+                                Proceedings of the Royal Society of Edinburgh, volume 110A, 1988.</dt>
+                            <dt>with B. Maggs, R. Sitaraman, Y. Lin, “Protecting Mission-Critical Web Sites from Attacks”, Computer, 
+                                volume 48, number 4, pages 26-34, April 2015.</dt>
+                        </dl>
+                    </div>
+                    
+                    <!-- Professor Gillman's information ends here-->
+
+                    
+                    <!-- Professor Hamid's information starts here-->
+                    <h1 class="prof">Fahmida Hamid</h1>
+                    <h4>Assistant Professor of Computer Science - Computer Science - Natural Sciences</h4>
+                    <img src="images/faculty/hamid.jpeg" alt="Professor Hamid">
+                    <p>
+                        Phone: (941) 487-4171<br/>
+                        Email: fhamid@ncf.edu<br/>
+                        Office Location: E153<br/>
+                        Mail Location: HNS E172C<br/><br/>  
+                        Ph.D, Computer Science & Engineering, University of North TexasMS,<br/>  
+                        Computer Science & Engineering, University of Dhaka, Dhaka, BangladeshBS,<br/>      
+                        Computer Science & Engineering, University of Dhaka, Dhaka, Bangladesh
+                    </p>
+
+                    <!-- display/ no display interest button -->
+                    <button onclick="hamidInterest()">Research Interests<i class="arrow down"></i></button><br/>
+
+                    <div id="hamidInterest" style="display: none;">
+                        <p style="color: black;">
+                            My research interests span the area of Information Retrieval and Natural Language Processing. 
+                            I modeled an unsupervised sentiment-oriented summary extraction technique for single documents, 
+                            proposed a generic baseline for evaluating automatic summary (and key phrase) extraction algorithms, 
+                            and devised a relativized scale for evaluating machine-generated summaries with respect to multiple 
+                            reference summaries. I conducted research with six students this summer where we explored different 
+                            area and aspects of Recommender Systems. My most recent projects are modeling context-aware music 
+                            recommender systems and inducing serendipity in the traditional recommendation algorithms.
+                        </p>
+
+                        <dl class="list">
+                            <dt>Natural Language Processing, area of specialization: Summarization and Key phrase Extraction, Sentiment Analysis</dt>
+                            <dt>Information Retrieval, area of specialization: Evaluation techniques</dt>
+                            <dt>Recommender Systems, area of specialization: Designing hybrid systems for music/book lovers</dt>
+                        </dl>
+                    </div>
+
+                    <!-- display/ no display courses button -->
+                    <button onclick="hamidCourses()">Course Offerings<i class="arrow down"></i></button><br/>
+
+                    <div id="hamidCourses" style="display: none;">
+                        <dl class="list">
+                            <dt>CSCI 3450: Natural Language Processing</dt>
+                            <dt>CSCI 3400: Object-Oriented Design</dt>
+                        </dl>
+                    </div>
+
+                    <!-- display/ no display publications button -->
+                    <button onclick="hamidPublications()">Selected Publications<i class="arrow down"></i></button><br/>
+
+                    <div id="hamidPublications" style="display: none;">
+                        <dl class="list">
+                            <dt>Fahmida Hamid, A Course-based Undergraduate Research Experience (CURE) in Computer Science: 
+                                An Experience Report, CCSC-Central Plains (2020)</dt>
+                            <dt>Linh Tang and Fahmida Hamid, CAARS: A Context-Aware Artist Recommender System for Twitter 
+                                Users, RecSys@FLAIRS(2020)</dt>
+                            <dt>Fahmida Hamid, David Haraburda and Paul Tarau, Evaluating Text Summarization Systems with 
+                                a Fair Baseline from Multiple Reference Summaries, ECIR (2016)</dt>
+                            <dt>Fahmida Hamid and Paul Tarau, Anti-Summaries: Enhancing Graph-based Techniques for Summary 
+                                Extraction with Sentiment Polarity, CICLing (2015)</dt>
+                        </dl>
+                    </div>
+                    <!-- Professor Hamid's information ends here-->
+
+                    <!-- Professor Lepinski's information starts here-->
+                    <h1 class="prof">Matthew Lepinski</h1>
+                    <h4>Associate Professor of Computer Science - Computer Science - Data Science Program - Graduate Studies 
+                        - Interdisciplinary Programs - Natural Sciences - Rhetoric and Writing</h4>
+                    <img src="images/faculty/lepinski.jpeg" alt="Professor Lepinski">
+                    <p>
+                        Phone: (941) 487-4660<br/>
+                        Email: mlepinski@ncf.edu<br/>
+                        Office Location: HNS E155<br/>
+                        Mail Location: Heiser E172C<br/><br/>
+                        Ph.D., Massachusetts Institute of TechnologyM.S.,<br/> 
+                        Massachusetts Institute of TechnologyB.S.,<br/>
+                        Rose-Hulman Institute of Technology<br/>
+                        Research Scientist at BBN.
+                    </p>
+
+                    <!-- display/ no display interest button -->
+                    <button onclick="lepinskiInterest()">Interests<i class="arrow down"></i></button><br/>
+
+                    <div id="lepinskiInterest" style="display: none;">
+                        <p style="color: black;">
+                            Cyber-security, Privacy, Software Engineering.<br/><br/>
+
+                            Professor Lepinski has broad interests covering cyber-security, 
+                            computer networks, and software development. Prior to joining the 
+                            New College faculty, he worked for nine years at BBN Technologies. 
+                            His work in industry focused on transitioning security and privacy 
+                            technologies from the academic literature to use in real-world systems.<br/><br/>
+
+                            Professor Lepinski is active in the Internet Engineering Task Force (IETF), 
+                            the group that develops technical standards for use on the public Internet. 
+                            In the IETF, he has played a key role in work on interdomain routing security, 
+                            privacy of location data, and HTTP-layer authentication. His current research 
+                            focuses on the security of widely-deployed Internet protocols, and the evolution of the public Internet.
+                        </p>
+                    </div>
+
+                    <!-- display/ no display courses button -->
+                    <button onclick="lepinskiCourses()">Recent Courses<i class="arrow down"></i></button><br/>
+
+                    <div id="lepinskiCourses" style="display: none;">
+                        <dl class="list">
+                            <dt>Introduction to Programming in Python</dt>
+                            <dt>Computer Networks</dt>
+                            <dt>Cryptography and Computer Security</dt>
+                            <dt>Distributed Computing for Data Science</dt>
+                        </dl>
+                    </div>
+
+                    <!-- display/ no display publications button -->
+                    <button onclick="lepinskiPublications()">Selected Publications<i class="arrow down"></i></button><br/>
+
+                    <div id="lepinskiPublications" style="display: none;">
+                        <dl class="list">
+                            <dt>“An Infrastructure to Support Secure Internet Routing,” Matthew Lepinski and 
+                                Stephen Kent, RFC 6480, February 2012</dt>
+                            <dt>“An Architecture for Location and Location Privacy in Internet Applications,” Richard Barnes, 
+                                Matthew Lepinski, Alissa Cooper, John Morris, Hannes Tschofenig, and Henning Schulzrinne, RFC 6280, July 2011</dt>
+                            <dt>“Perfect Implementation,” Sergei Izmalkov, Matthew Lepinski, and Silvio Micali,Games and 
+                                Economic Behavior, vol. 71, Issue 1, January 2011</dt>
+                            <dt>“Collusion-Free Protocols,” Matthew Lepinski, Silvio Micali and Abhi Shelat, In theproceedings of 
+                                the 37th ACM Theory of Computing (STOC), 2005</dt>
+                        </dl>
+                    </div>
+                    <!-- Professor Lepinski's information ends here-->
+
+                    <!-- Professor Roy's information starts here-->
+                    <h1 class="prof">Tania Roy</h1>
+                    <h4>Assistant Professor of Human Centered Computing - Computer Science - Natural Sciences</h4>
+                    <img src="images/faculty/roy.jpeg" alt="Professor Roy">
+                    <p>
+                        Phone: (941) 487-4369<br/>
+                        Email: troy@ncf.edu<br/>
+                        Office Location: HNS E157<br/>
+                        Mail Location: HNS E172C<br/><br/>
+                        PhD in Human Centered Computing, Clemson University<br/>
+                        M.S in Computer Science, Clemson University<br/>
+                        B.Tech in Computer Science & Engineering , West Bengal University of Technology, India
+                    </p>
+
+                    <!-- display/ no display interest button -->
+                    <button onclick="royInterest()">Interests<i class="arrow down"></i></button><br/>
+
+                    <div id="royInterest" style="display: none;">
+                        <p style="color: black;">
+                            Human centered computing, socially relevant computing, applied machine learning, 
+                            interpersonal violence prevention and mental health related applications.<br/><br/>
+                            
+                            Professor Roy has broad interests in using technology to solve socially relevant topics 
+                            such as dating violence prevention, mental and sexual health awareness and classroom engagement. 
+                            Prior to joining New College, Dr. Roy was a PhD student in Clemson University and part of the 
+                            Virtual Environments Group. She is also passionate about being involved in initiatives that promote 
+                            diversity in STEM such as ACM-W.
+                        </p>
+                    </div>
+
+                    <!-- display/ no display courses button -->
+                    <button onclick="royCourses()">Recent Courses<i class="arrow down"></i></button><br/>
+
+                    <div id="royCourses" style="display: none;">
+                        <dl class="list">
+                            <dt>Introduction to Programming in Python</dt>
+                            <dt>Foundations of Human Centered Computing</dt>
+                        </dl>
+                    </div>
+
+                    <!-- display/ no display publications button -->
+                    <button onclick="royPublications()">Relevant Publications<i class="arrow down"></i></button><br/>
+
+                    <div id="royPublications" style="display: none;">
+                        <dl class="list">
+                            <dt>Roy, T., McClendon, J., & Hodges, L. (2018, June). Analyzing Abusive Text Messages 
+                                to Detect Digital Dating Abuse. In 2018 IEEEInternational Conference on Healthcare Informatics 
+                                (ICHI) (pp. 284-293). IEEE.</dt>
+                            <dt>Roy, T.,  Daily, S.B., and Hodges, L. F.,  McClendon, J.(2016). SecondLook: Participatory design 
+                                process to create a phone app that detects digital dating abuse. Proceedings of the International 
+                                Conference on Healthcare Informatics, Chicago, Ill., (Pages 320-327).</dt>
+                            <dt>Daily, S.B., James, M.T., Roy, T., Darnell, S.S. (2014). EngageMe: Designing A Visualization Tool 
+                                Utilizing Physiological Feedback to Support instruction. Technology, Instruction, and Learning 2015, 
+                                10(2), pp. 107-126</dt>
+                            <dt>Daily, S.B., Meyers, D., Darnell, S., Roy, T. (2013). Understanding Privacy and Trust Issues in a Classroom 
+                                Affective Computing System Development. Human-Computer Interaction International Conference. (July 21- 26, 2013, 
+                                Las Vegas, NV. (Pages 414 – 423).</dt>
+                        </dl>
+                    </div>
+                    <!-- Professor Roy's information ends here-->
+                </div>
+                <br/><br/>
+        </div>
+    </div>
+
+<!-- FOOTER STARTS HERE -->
+<div class="footer">
+    <div class="row">
+        <div class="column">
+          <h2>Contact</h2>
+          <p>New College of Florida<br/>
+            500 College Dr<br/>
+            Sarasota, FL 34243<br/>
+            (941) 487-5000
+            </p>
+        </div>
+        <div class="column">
+            <h2>Connect</h2>
+            <a href="https://www.linkedin.com/school/newcollegeofflorida/mycompany/" target="_blank">LinkedIn</a><br/>
+            <a href="https://www.instagram.com/newcollegeoffl/" target="_blank">Instagram</a><br/>
+            <a href="https://twitter.com/NewCollegeofFL" target="_blank">Twitter</a><br/>
+            <a href="https://www.youtube.com/user/NewCollegeofFL" target="_blank">YouTube</a>
+        </div>
+    </div>
+</div>
+<!-- FOOTER ENDS HERE -->
+
+</body>
+</html>

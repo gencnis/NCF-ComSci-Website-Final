@@ -1,0 +1,131 @@
+<!-- This page is to Request Information from the department
+    @author: Nisanur Genc
+    Front-End Web Design-Development Class, NCF, December, 2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/navBarFooter.css">
+    <link rel="stylesheet" href="css/requestinfo.css">
+    <link rel="icon" href="images/titlelogo.png" type="image/icon type">
+
+        <!-- JS -->
+    <script src="js/navigationBar.js"></script>
+    <script src="js/highlightNavBar.js"></script>
+    <script src="js/requiredInfo.js"></script>
+    <title>Request Info | New College of Florida</title>
+</head>
+
+<body>
+
+    <!-- NAV STARTS HERE -->
+    <div class="nav">
+        <div class="nav">
+            <div class="nav-title" id="title">
+                <div class="logo" id="logo">
+                    <a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                        style="text-decoration: none; color: #26478E;">
+                        <img src="images/ncflogoPNG.png" alt="New College Logo" width="160px" height="40px"/>
+                    </a>
+                </div>
+                <div class="my-title" id="myTitle">
+                    <h1>Computer Science</h1>
+                </div>
+                <div class="options" id="options">
+                    <ul style="font-size: large;">
+                        <li><a href="requestinfo.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Request Info</a></li> 
+                        <li><a href="curriculum.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Curriculum</a></li>
+                        <li><a href="faculty.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Faculty</a></li>
+                        <li><a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAV ENDS HERE -->
+
+    <div style="overflow:auto">
+        <div class="fixed-bg"> <!-- is for the background image -->
+            <br/><br/>
+            <div class="reqInfo">
+                <!-- header for the page -->
+                <h1 style="border-bottom: solid; border-color: #172C58; padding-bottom: 2px;">Request Information</h1>
+                <p style="color: #a3475e">* indicates required fields.</p><br/>
+
+                <!-- form to be able to check fields if they are empty and be able to enter information -->
+                <form onsubmit="return checkReqFields()">
+                    <strong>* First Name: </strong><br/><br/>
+                    <input class="field" type="text" id="txtName" /><br/><br/> <!-- input field for the first name -->
+                    <span id="reqTxtName" class="reqError"></span><br/> <!-- shows an error in case previous field is empty -->
+                    <br/>
+        
+                    <strong>Middle Name: </strong><br/><br/>
+                    <input class="field" type="text"/> <!-- input field for the middle name -->
+                    <br/><br/><br/>
+        
+                    <strong>* Last Name: </strong><br/><br/>
+                    <input class="field" type="text" id="txtLast" /><br/><br/> <!-- input field for the last name -->
+                    <span id="reqTxtLast" class="reqError"></span><br/> <!-- shows an error in case previous field is empty -->
+                    <br/>
+        
+                    <strong>Preferred Name: </strong><br/><br/>
+                    <input class="field" type="text"/> <!-- input field for the preferred name -->
+                    <br/><br/><br/><br/>
+        
+                    <strong>* E-mail Address: </strong><br/><br/>
+                    <input class="field" type="text" id="txtEmail" /><br/><br/> <!-- input field for the email address -->
+                    <span id="reqTxtEmail" class="reqError"></span><br/> <!-- shows an error in case previous field is empty -->
+                    <br/>
+        
+                    <strong>* Postal Code: </strong><br/><br/>
+                    <input class="field" type="text" id="txtCode" /><br/><br/> <!-- input field for the postal code -->
+                    <span id="reqTxtCode" class="reqError"></span><br/> <!-- shows an error in case previous field is empty -->
+                    <br/>
+        
+                    <strong>* What would you like to request information about?</strong><br/><br/>
+                    <input class="field" type="text" id="txtInfo" /><br/><br/> <!-- input field for what information was requested -->
+                    <span id="reqTxtInfo" class="reqError"></span><br/> <!-- shows an error in case previous field is empty -->
+                    <br/>
+        
+                    <p><input id="submit" type="submit" value="Submit"/></p> <!-- submit button for the information -->
+                </form>
+            </div>
+            <br/><br/>
+        </div>
+    </div>
+
+<!-- FOOTER STARTS HERE -->
+<div class="footer">
+    <div class="row">
+        <div class="column">
+          <h2>Contact</h2>
+          <p>New College of Florida<br/>
+            500 College Dr<br/>
+            Sarasota, FL 34243<br/>
+            (941) 487-5000
+            </p>
+        </div>
+        <div class="column">
+            <h2>Connect</h2>
+            <a href="https://www.linkedin.com/school/newcollegeofflorida/mycompany/" target="_blank">LinkedIn</a><br/>
+            <a href="https://www.instagram.com/newcollegeoffl/" target="_blank">Instagram</a><br/>
+            <a href="https://twitter.com/NewCollegeofFL" target="_blank">Twitter</a><br/>
+            <a href="https://www.youtube.com/user/NewCollegeofFL" target="_blank">YouTube</a>
+        </div>
+    </div>
+</div>
+<!-- FOOTER ENDS HERE -->
+
+</body>
+</html>

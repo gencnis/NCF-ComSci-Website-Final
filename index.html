@@ -1,0 +1,206 @@
+<!-- This page is Index, Home Page
+    @author: Nisanur Genc
+    Front-End Web Design-Development Class, NCF, December, 2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/navBarFooter.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/titlelogo.png" type="image/icon type">
+
+        <!-- JS -->
+    <script src="js/navigationBar.js"></script>
+    <script src="js/highlightNavBar.js"></script>
+    <script src="js/slideLogo.js"></script>
+    <title>Computer Science | New College of Florida</title>
+</head>
+
+<body>
+
+    <!-- NAV STARTS HERE -->
+    <div class="nav">
+        <div class="nav">
+            <div class="nav-title" id="title">
+                <div class="logo" id="logo">
+                    <a href="index.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                        style="text-decoration: none; color: #26478E;">
+                        <img src="images/ncflogoPNG.png" alt="New College Logo" width="160px" height="40px"/>
+                    </a>
+                </div>
+                <div class="my-title" id="myTitle">
+                    <h1>Computer Science</h1>
+                </div>
+                <div class="options" id="options">
+                    <ul style="font-size: large;">
+                        <li><a href="requestinfo.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Request Info</a></li> 
+                        <li><a href="curriculum.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Curriculum</a></li>
+                        <li><a href="faculty.html" onmouseover="highlightNav(this)" onmouseout="normalNav(this)"
+                            style="text-decoration: none; color: #26478E;">Faculty</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAV ENDS HERE -->
+
+<!-- Disclaimer claiming this is not the real NCF CS page -->
+<div class="disclaimer" style="padding:15px; text-align:center; font-size: small; color: #354164;">
+    <p>
+        DISCLAIMER: THIS IS NOT THE REAL NCF COMSCI WEBPAGE. THIS HAS BEEN DESIGNED FOR FRONT-END WEB DESIGN CLASS.
+    </p>
+</div>
+
+<div style="overflow:auto">
+    <div class="fixed-bg"> <!-- if for the background image -->
+        <div class="left"> <!-- this left column holds the buttons for information -->
+            <div class="menu" style="font-weight: bold;">
+                <!-- What Can I Do With My Major button -->
+                <a class="opt" href="https://whatcanidowiththismajor.com/major/computer-science/" target="_blank">What can I do with my Computer Science AOC?</a>
+                <!-- Learn about Heiser button -->
+                <a class="opt" href="https://www.ncf.edu/about/our-campus/facilities/venues/heiser-natural-sciences-complex/" target="_blank">Where is Computer Scince Department?<br/>
+                    Learn about Heiser Natural Sciences Complex</a>
+                <!-- Scheduling a visit button -->
+                <a class="opt" onclick="window.open('schedulevisit.html',
+                    'popUpWindow','height=700, width=900, left=300, top=200, resizable=yes, scrollbars=yes, toolbar=yes, menubar=no, location=no, directories=no, status=yes');">
+                    Schedule a visit</a>
+            </div>
+        </div>
+    
+        <div class="right"> <!-- this right column holds the primary information for the department -->
+            <div class="main">
+                <h2 style="font-size: large; color: #172C58;">WHY STUDY COMPUTER SCIENCE AT NEW COLLEGE?</h2>
+                <p style="font-size: medium;">Computer Science is a new and rapidly growing multi- and interdisciplinary field that uses advanced computing and data analysis to understand and solve complex problems. 
+                    As a major in Computer Science at New College, you will work closely with faculty who have experience in the classroom, as well as, in the business world to design a 
+                    personalized plan of study that combines advanced classes in areas like software engineering, computing for bioinformatics, data mining, and networks and algorithms, 
+                    as well as labs, research and a senior thesis project that includes an extensive programming component. All are designed to give you a hand up when it comes to graduate 
+                    school admission and career preparation.</p>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+
+    <!-- NCF COVID updates button, this takes you to the restrictions and latest updates about COVID on NCF campus -->
+    <div class="warning">
+        <a href="https://www.ncf.edu/covid-19/" target="_blank">NCF's Return to Campus: COVID-19 Response</a>
+    </div>
+
+    <!-- Second area for the information part -->
+    <div class="secondArea" style="background-color: #F0F1F2;">
+        <div class="indexColumn">
+            <div> <!-- Gives more information about the CS AOC -->
+                <h2 style="font-size: large; color: #172C58; border-bottom: 4px solid #172C58;">COMPUTER SCIENCE AREA OF CONCENTRATION</h2>
+                <p> As a major in Computer Science at New College, you will work closely with faculty who have experience in the classroom, as well as in the business world, to design a personalized 
+                    plan of study that combines advanced classes in areas like software engineering, computing for bioinformatics, data mining, networks and algorithms, as well as labs, research and 
+                    a senior thesis project that includes an extensive programming component. All are designed to give you a hand up when it comes to graduate school admission and career preparation.</p>
+                    <br/>
+                <!-- Student Project button takes you to the projects page -->
+                <a href="projects.html" id="projects">Student Projects</a>
+            </div>
+        </div>
+
+        <div class="indexColumn">
+            <div> <!-- This container holds a list for the recent theses from the CS AOC -->
+                <dl class="theses">
+                    <dt><h2 style="font-size: large; color: #172C58;">Recent Theses</h2></dt>
+                    <dd>Clustering Heart Disease Patients Using Machine Learning</dd>
+                    <dd>Raspberry Pi Granular Synthesizer</dd>
+                    <dd>Analyzing the Difference in Development Between Flutter and Native Android Development</dd>
+                    <dd>Developing a Mobile Map for Visitors to Glacier National Park</dd>
+                    <dd>An Exploration of Censorship Resistant Decentralized Applications</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+
+    <div> <!-- Header for the slideshow -->
+        <h3 style="text-align: center; 
+            color: #354164;
+            padding:15px;">
+            WHERE DO OUR ALUMNI WORK?
+        </h3>
+    </div>
+
+    <div class="slideshow-container"> <!-- slideshow container -->
+
+        <div class="mySlides fade"> <!-- First image container -->
+            <div class="numbertext">1 / 4</div> <!-- Displays the order of the images -->
+            <br/>
+            <img src="images/alumniLogo/signifyd.png" style="height: 100%" alt="Signifyd Logo">  <!-- logo 1-->
+            <div class="text">Signifyd, San Jose, California</div>  <!-- label for the logo 1-->
+        </div>
+        
+        <div class="mySlides fade"> <!-- Second image container -->
+            <div class="numbertext">2 / 4</div> <!-- Displays the order of the images -->
+            <br/>
+            <img src="images/alumniLogo/perspecta.png" style="height: 100%" alt="Perspecta Labs Logo">  <!-- logo 2-->
+            <div class="text">Perspecta Labs</div> <!-- label for the logo 2 -->
+        </div>
+        
+        <div class="mySlides fade"> <!-- Third image container -->
+            <div class="numbertext">3 / 4</div> <!-- Displays the order of the images -->
+            <br/>
+            <img src="images/alumniLogo/reynolds.png" style="height: 100%" alt="Reynolds and Reynolds Logo">  <!-- logo 3-->
+            <div class="text">Reynolds and Reynolds, Sarasota, Florida</div> <!-- label for the logo 3 -->
+        </div>
+
+        <div class="mySlides fade"> <!-- Fourth image container -->
+            <div class="numbertext">4 / 4</div> <!-- Displays the order of the images -->
+                <br/>
+                <img src="images/alumniLogo/star2star.png" style="height: 100%" alt="Star2Star Communications Logo">  <!-- logo 4-->
+                <div class="text">Star2Star Communications, Sarasota, Florida</div> <!-- label for the logo 4 -->
+            </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- shows the previous image -->
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- shows the next image -->
+        
+        <br>
+        
+        <div style="text-align:center;"> <!-- holds dots to visualize the order of the images -->
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+    </div>
+</div>
+
+<br/>
+
+<!-- FOOTER STARTS HERE -->
+<div class="footer">
+    <div class="row">
+        <div class="column">
+          <h2>Contact</h2>
+          <p>New College of Florida<br/>
+            500 College Dr<br/>
+            Sarasota, FL 34243<br/>
+            (941) 487-5000
+            </p>
+        </div>
+        <div class="column">
+            <h2>Connect</h2>
+            <a href="https://www.linkedin.com/school/newcollegeofflorida/mycompany/" target="_blank">LinkedIn</a><br/>
+            <a href="https://www.instagram.com/newcollegeoffl/" target="_blank">Instagram</a><br/>
+            <a href="https://twitter.com/NewCollegeofFL" target="_blank">Twitter</a><br/>
+            <a href="https://www.youtube.com/user/NewCollegeofFL" target="_blank">YouTube</a>
+        </div>
+    </div>
+</div>
+<!-- FOOTER ENDS HERE -->
+
+</body>
+</html>
+
