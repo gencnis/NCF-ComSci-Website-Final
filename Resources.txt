@@ -1,0 +1,31 @@
+RESOURCES
+
+- https://www.w3schools.com/howto/howto_css_arrows.asp
+
+- https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+- https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+
+- https://www.educba.com/nested-table-in-html/
+
+- https://www.w3schools.com/howto/howto_css_calendar.asp
+
+- https://demo.mobiscroll.com/javascript/eventcalendar?gclid=Cj0KCQiAnaeNBhCUARIsABEee8XSbgjvSNaWl8HVs3rfiGvIlQZcgASMLZUyrRPs5BxS_J2InI8BSCcaAtYhEALw_wcB
+
+- https://medium.com/@nitinpatel_20236/challenge-of-building-a-calendar-with-pure-javascript-a86f1303267d
+
+- https://mindfusion.eu/blog/interactive-calendar-with-events-in-javascript/
+
+- https://www.cssscript.com/create-simple-event-calendar-javascript-caleandar-js/
+
+- https://www.w3schools.com/html/html_images_background.asp
+
+- https://www.w3schools.com/tags/att_input_required.asp
+
+- https://stackoverflow.com/questions/18770369/how-to-set-html5-required-attribute-in-javascript
+
+- https://www.codegrepper.com/code-examples/javascript/javascript+add+required+attribute+to+input
+
+- https://www.w3schools.com/howto/howto_css_three_columns.asp
+
+
